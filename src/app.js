@@ -25,11 +25,6 @@ app.get('/', (req, res) => {
     res.send('Hello');
 });
 
-app.get('/xss', (req, res) => {
-    res.cookie('secretToken', '911');
-    res.sendFile(__dirname + '/xss-example.html');
-});
-
 app.use(errorHandler);
 
 module.exports = app;
