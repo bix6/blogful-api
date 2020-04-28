@@ -7,6 +7,8 @@ const { NODE_ENV } = require('./config');
 const validateBearerToken = require('./validate-bearer-token');
 const errorHandler = require('./error-handler');
 const articlesRouter = require('./articles/articles-router');
+const usersRouter = require('./users/users-router');
+const commentsRouter = require('./comments/comments-router');
 // const logger = require('./logger');
 
 const app = express();
@@ -20,6 +22,8 @@ app.use(cors());
 //app.use(validateBearerToken);
 
 app.use('/api/articles', articlesRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/comments', commentsRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello');
