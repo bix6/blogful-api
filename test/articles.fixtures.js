@@ -5,28 +5,32 @@ function makeArticlesArray() {
             date_published: '2029-01-22T16:28:32.615Z',
             title: 'First post!',
             style: 'How-to',
-            content: 'First place content yeah'
+            content: 'First place content yeah',
+            author: 1
         },
         {
             id: 2,
             date_published: '2029-01-22T16:28:32.615Z',
             title: 'Second post',
             style: 'News',
-            content: 'Second content oooo'
+            content: 'Second content oooo',
+            author: 1
         },
         {
             id: 3,
             date_published: '2029-01-22T16:28:32.615Z',
             title: 'Ok Ok Third',
             style: 'Listicle',
-            content:' Third place Listicle'
+            content:' Third place Listicle',
+            author: 2
         },
         {
             id: 4,
             date_published: '2029-01-22T16:28:32.615Z',
             title: '4th is the 4th',
             style: 'Story',
-            content: 'May the 4th be with you'
+            content: 'May the 4th be with you',
+            author: 2
         }
     ];
 };
